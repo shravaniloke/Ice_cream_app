@@ -24,7 +24,7 @@ Backend: Python (Bottle Framework)
 Frontend: HTML, CSS
 
 ## Deployment
-This project is hosted on [Render](https://ice-cream-app-09r2.onrender.com/) 
+This project is hosted on [Render][Ice_Cream_App](https://ice-cream-app-09r2.onrender.com/) 
 
 ##👩‍💻 Author
 
