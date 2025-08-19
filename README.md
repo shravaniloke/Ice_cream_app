@@ -1,4 +1,4 @@
-### 🍦 Ice Cream App
+# 🍦 Ice Cream App
 
 The Ice Cream App is a simple web application built using the Bottle framework (Python) with HTML and CSS for the frontend.
 It demonstrates a basic web app structure where users can browse and interact with an ice cream-themed interface.
