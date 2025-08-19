@@ -3,22 +3,54 @@
 <head>
     <title>Ice Cream Flavor Picker</title>
     <style>
-        body { text-align: center; font-family: Arial; background-color: #fff8e1; }
-        img { max-width: 300px; border-radius: 20px; margin-top: 15px; }
-        button { padding: 10px 20px; font-size: 18px; background: #ffcc80; border: none; border-radius: 10px; cursor: pointer; }
-        button:hover { background: #ffb74d; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff8e7;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        p {
+            font-size: 1.2em;
+            color: #444;
+        }
+        button {
+            background-color: #ffb347;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #000;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff8c42;
+        }
     </style>
 </head>
 <body>
-    <h1>{{'🍦 ' + name if name else 'Ice Cream Flavor Picker'}}</h1>
-
-    % if img:
-        <img src="/static/{{img}}" alt="{{name}}">
+    % if name:
+        <h1>🍦 {{name}}</h1>
+        <img src="{{img}}" alt="{{name}}">
+        <p>{{desc}}</p>
+    % else:
+        <h1>🍦 Ice Cream Flavor Picker</h1>
+        <p>{{desc}}</p>
     % end
 
-    <p>{{desc}}</p>
-
-    <form action="/" method="post">
+    <form method="post">
         <button type="submit">{{btn_text}}</button>
     </form>
 </body>
